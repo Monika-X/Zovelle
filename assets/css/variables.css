@@ -1,0 +1,57 @@
+/* ==========================================================================
+   ZOVELLE Design System Tokens (CSS Custom Properties)
+   ========================================================================== */
+
+:root {
+  /* Brand Colors */
+  --color-plum: #241326;     /* Midnight Plum */
+  --color-champagne: #D6B98C; /* Champagne */
+  --color-porcelain: #F7F3EE; /* Porcelain */
+  --color-mocha: #6B5145;     /* Mocha */
+  --color-rosewood: #8E5962;  /* Rosewood */
+  --color-ink: #151515;       /* Ink Black */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* Semantic Colors (Light Mode Default) */
+  --bg-primary: var(--color-porcelain);
+  --bg-secondary: var(--color-white);
+  --bg-inverse: var(--color-plum);
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-mocha);
+  --text-inverse: var(--color-porcelain);
+  --border-color: rgba(107, 81, 69, 0.2); /* Mocha at 20% opacity */
+  --accent-primary: var(--color-champagne);
+  --accent-secondary: var(--color-rosewood);
+  
+  /* Typography */
+  --font-editorial: 'Bodoni Moda', serif;
+  --font-ui: 'Manrope', sans-serif;
+  
+  /* Layout & Spacing */
+  --container-width: 1440px;
+  --container-padding: 2rem;
+  
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 1rem;     /* 16px */
+  --spacing-md: 2rem;     /* 32px */
+  --spacing-lg: 4rem;     /* 64px */
+  --spacing-xl: 8rem;     /* 128px */
+  --spacing-xxl: 12rem;   /* 192px */
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-normal: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-cinematic: 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Z-Index Scale */
+  --z-negative: -1;
+  --z-normal: 1;
+  --z-raised: 10;
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-loader: 500;
+}

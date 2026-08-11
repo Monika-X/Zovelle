@@ -1,0 +1,29 @@
+/* ==========================================================================
+   RTL (Right-to-Left) Language Support
+   ========================================================================== */
+
+html[dir="rtl"] {
+  /* Mirror margins/padding where necessary */
+}
+
+html[dir="rtl"] .reveal.slide-left {
+  transform: translateX(-50px);
+}
+
+html[dir="rtl"] .reveal.slide-right {
+  transform: translateX(50px);
+}
+
+html[dir="rtl"] .nav-menu {
+  /* Adjust spacing for RTL if gap isn't sufficient */
+}
+
+html[dir="rtl"] .badge {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .input-label {
+  left: auto;
+  right: 0;
+}

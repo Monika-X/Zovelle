@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Google Fonts Import (Bodoni Moda & Manrope) */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.font-editorial {
+  font-family: var(--font-editorial);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h1, .text-h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+}
+
+h2, .text-h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h3, .text-h3 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h4, .text-h4 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h5, .text-h5 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+/* UI Text Utilities */
+.text-overline {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.text-subtitle {
+  font-family: var(--font-ui);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.text-body {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Alignments */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Colors */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-champagne { color: var(--color-champagne); }
+.text-rosewood { color: var(--color-rosewood); }

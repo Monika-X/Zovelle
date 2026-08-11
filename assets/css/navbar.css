@@ -1,0 +1,163 @@
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-header);
+  transition: all var(--transition-normal);
+  padding: 1.5rem 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(247, 243, 238, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .navbar.scrolled {
+  background-color: rgba(36, 19, 38, 0.95); /* Plum */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-brand {
+  font-family: var(--font-editorial);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-plum);
+}
+
+body.dark-mode .nav-brand {
+  color: var(--color-porcelain);
+}
+
+.navbar:not(.scrolled) .nav-brand {
+  color: var(--color-white); /* White text on transparent bg (assuming dark hero) */
+}
+
+/* Nav Links */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-plum);
+  transition: color var(--transition-fast);
+}
+
+body.dark-mode .nav-link {
+  color: var(--color-porcelain);
+}
+
+.navbar:not(.scrolled) .nav-link {
+  color: var(--color-white);
+}
+
+.nav-link:hover {
+  color: var(--color-champagne);
+}
+
+/* Nav Icons */
+.nav-icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-icon {
+  background: none;
+  border: none;
+  color: var(--color-plum);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+body.dark-mode .nav-icon {
+  color: var(--color-porcelain);
+}
+
+.navbar:not(.scrolled) .nav-icon {
+  color: var(--color-white);
+}
+
+.nav-icon:hover {
+  color: var(--color-champagne);
+}
+
+/* Toggle Buttons (Theme / RTL) */
+.nav-icon.dark-mode-toggle .icon-sun,
+body.dark-mode .nav-icon.dark-mode-toggle .icon-moon {
+  display: none;
+}
+
+body.dark-mode .nav-icon.dark-mode-toggle .icon-sun {
+  display: block;
+}
+
+.nav-icon.rtl-toggle {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.nav-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: var(--z-header) + 1;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-plum);
+  transition: all var(--transition-fast);
+}
+
+.navbar:not(.scrolled) .menu-toggle span {
+  background-color: var(--color-white);
+}
+
+body.dark-mode .menu-toggle span {
+  background-color: var(--color-porcelain);
+}
+
+@media (max-width: 1024px) {
+  .nav-menu { display: none; }
+  .menu-toggle { display: flex; }
+}

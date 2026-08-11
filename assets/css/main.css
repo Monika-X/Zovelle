@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Master CSS Import File
+   ========================================================================== */
+
+/* 1. Tokens & Reset */
+@import url('./variables.css');
+@import url('./reset.css');
+
+/* 2. Global Styles */
+@import url('./typography.css');
+@import url('./layout.css');
+
+/* 3. Shared Components */
+@import url('./components.css');
+@import url('./navbar.css');
+@import url('./animations.css');
+
+/* 4. Section Styles */
+@import url('./hero.css');
+@import url('./dark-mode.css');
+@import url('./rtl.css');
+
+/* Global Footer Styles */
+.footer {
+  background-color: var(--color-plum);
+  color: var(--color-porcelain);
+  padding: var(--spacing-xl) 0 0;
+}
+
+.footer-top {
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand {
+  font-family: var(--font-editorial);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col-title {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  color: var(--color-champagne);
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: rgba(247, 243, 238, 0.7);
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-porcelain);
+}
+
+.footer-bottom {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: rgba(247, 243, 238, 0.5);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

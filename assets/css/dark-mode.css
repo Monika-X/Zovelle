@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Dark Mode Overrides
+   ========================================================================== */
+
+body.dark-mode {
+  --bg-primary: var(--color-plum);
+  --bg-secondary: #1a0e1b;
+  --bg-inverse: var(--color-porcelain);
+  --text-primary: var(--color-porcelain);
+  --text-secondary: rgba(247, 243, 238, 0.7);
+  --text-inverse: var(--color-plum);
+  --border-color: rgba(247, 243, 238, 0.1);
+  --accent-primary: var(--color-champagne);
+  
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.dark-mode .card-product-img-wrapper {
+  background-color: #1a0e1b;
+}
+
+body.dark-mode .card-product-action {
+  background: rgba(36, 19, 38, 0.9);
+}
+
+body.dark-mode .input-field {
+  color: var(--color-porcelain);
+}
+
+body.dark-mode .input-field:focus {
+  border-bottom-color: var(--color-champagne);
+}
+
+body.dark-mode .input-field:focus ~ .input-label,
+body.dark-mode .input-field:not(:placeholder-shown) ~ .input-label {
+  color: var(--color-champagne);
+}
