@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZOVELLE | About the House</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="stylesheet" href="../assets/css/main.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +14,14 @@
   <nav class="navbar scrolled">
 
     <div class="container">
-      <div class="nav-brand">ZOVELLE</div>
+      
+<a href="../index.html" class="nav-brand" aria-label="ZOVELLE - Home">
+  <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" transform="rotate(45 16 16)" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 11.5h11L13.5 20.5h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="brand-lockup">
+    <span class="brand-wordmark">ZOVELLE</span>
+    <span class="brand-tagline">Elevating the Everyday</span>
+  </span>
+</a>
       <ul class="nav-menu">
         <li><a href="../index.html" class="nav-link link-underline">Home</a></li>
         <li><a href="home-2.html" class="nav-link link-underline">Home 2</a></li>
@@ -22,6 +30,17 @@
         <li><a href="blog.html" class="nav-link link-underline">Blog</a></li>
         <li><a href="contact.html" class="nav-link link-underline">Contact</a></li>
       </ul>
+      <div class="nav-icons">
+        <button class="nav-icon dark-mode-toggle" aria-label="Toggle Theme">
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 100-10 5 5 0 000 10zM12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button class="nav-icon rtl-toggle" aria-label="Toggle RTL">RTL</button>
+        <a href="booking.html" class="btn btn-primary nav-cta">Book Now</a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -30,27 +49,37 @@
     <section class="relative" style="height: 70vh;">
       <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80" alt="Brand Story" class="object-cover w-full h-full">
       <div class="absolute inset-0 flex items-center p-8" style="background: rgba(0,0,0,0.4);">
-        <div class="container text-left">
+        <div class="container text-center">
           <h1 class="text-h1 reveal" style="color: white;">The House<br>of Zovelle</h1>
+          <p class="text-body reveal delay-200" style="margin-top: 2rem; margin-inline: auto; max-width: 480px; color: rgba(255,255,255,0.85);">Founded on the belief that dressing is a form of self-expression, Zovelle unites heritage craftsmanship with a modern editorial eye. Every collection is designed in-house and finished by master ateliers who have perfected their craft over decades.</p>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Our Values -->
-    <section class="section container text-center">
-      <h2 class="text-h2 reveal" style="margin-bottom: var(--spacing-lg);">Our Pillars</h2>
-      <div class="grid grid-3 gap-lg">
-        <div class="reveal delay-100">
-          <h3 class="text-h4" style="color: var(--color-plum); margin-bottom: 1rem;">Craftsmanship</h3>
-          <p class="text-body" style="color: var(--text-secondary);">Generations of artisanal skill poured into every seam.</p>
-        </div>
-        <div class="reveal delay-200">
-          <h3 class="text-h4" style="color: var(--color-plum); margin-bottom: 1rem;">Innovation</h3>
-          <p class="text-body" style="color: var(--text-secondary);">Pushing the boundaries of textile engineering and design.</p>
-        </div>
-        <div class="reveal delay-300">
-          <h3 class="text-h4" style="color: var(--color-plum); margin-bottom: 1rem;">Sustainability</h3>
-          <p class="text-body" style="color: var(--text-secondary);">Committed to ethical sourcing and enduring quality over fast fashion.</p>
+<!-- Section 2: Our Pillars (dark band) -->
+    <section class="section" style="background-color: var(--color-plum);">
+      <div class="container text-center">
+        <p class="text-overline mb-2 reveal" style="color: var(--color-champagne);">What We Stand For</p>
+        <h2 class="text-h2 reveal" style="color: var(--color-porcelain); margin-bottom: var(--spacing-lg);">Our Pillars</h2>
+        <div class="grid grid-3 gap-lg">
+          <div class="reveal delay-100" style="border-top: 1px solid rgba(247,243,238,0.15); padding-top: 1.5rem;">
+            <p class="text-h4" style="color: var(--color-champagne); font-family: var(--font-editorial); font-style: italic; margin-bottom: 1rem;">01</p>
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto 1rem; color: var(--color-champagne);" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+            <h3 class="text-h4" style="color: var(--color-porcelain); margin-bottom: 0.75rem;">Craftsmanship</h3>
+            <p class="text-body" style="color: rgba(247,243,238,0.7);">Generations of artisanal skill poured into every seam.</p>
+          </div>
+          <div class="reveal delay-200" style="border-top: 1px solid rgba(247,243,238,0.15); padding-top: 1.5rem;">
+            <p class="text-h4" style="color: var(--color-champagne); font-family: var(--font-editorial); font-style: italic; margin-bottom: 1rem;">02</p>
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto 1rem; color: var(--color-champagne);" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1 1.3 1 2.2h5.2c0-.9.3-1.6 1-2.2A6 6 0 0 0 12 3z"/></svg>
+            <h3 class="text-h4" style="color: var(--color-porcelain); margin-bottom: 0.75rem;">Innovation</h3>
+            <p class="text-body" style="color: rgba(247,243,238,0.7);">Pushing the boundaries of textile engineering and design.</p>
+          </div>
+          <div class="reveal delay-300" style="border-top: 1px solid rgba(247,243,238,0.15); padding-top: 1.5rem;">
+            <p class="text-h4" style="color: var(--color-champagne); font-family: var(--font-editorial); font-style: italic; margin-bottom: 1rem;">03</p>
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto 1rem; color: var(--color-champagne);" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            <h3 class="text-h4" style="color: var(--color-porcelain); margin-bottom: 0.75rem;">Sustainability</h3>
+            <p class="text-body" style="color: rgba(247,243,238,0.7);">Committed to ethical sourcing and enduring quality over fast fashion.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -60,42 +89,96 @@
       <div class="container">
         <div class="grid grid-2">
           <div></div> <!-- Empty column to push content to right -->
-          <div class="reveal slide-left" style="background: var(--color-porcelain); padding: var(--spacing-md);">
+          <div class="reveal slide-left" style="background: var(--bg-secondary); padding: var(--spacing-md);">
             <h2 class="text-h2" style="margin-bottom: 1.5rem;">Inside the Atelier</h2>
             <p class="text-body" style="margin-bottom: 2rem; color: var(--text-secondary);">Located in the heart of Paris, our atelier is where vision becomes reality. Over 50 master tailors work diligently to construct our signature pieces, combining old-world techniques with modern innovation.</p>
-            <a href="#" class="link-underline">Learn about our process</a>
+            <a href="services.html" class="link-underline">Learn about our process</a>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- Section 4, 5, 6 etc... (Abbreviated to meet 6 section requirement quickly) -->
-    <!-- Section 4: Team -->
-    <section class="section container">
-        <h2 class="text-h3 reveal text-center" style="margin-bottom: var(--spacing-lg);">Creative Direction</h2>
-        <div class="grid grid-2">
-            <div class="reveal delay-100 text-center">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Director 1" style="width: 100%; aspect-ratio: 3/4; object-fit: cover; margin-bottom: 1rem;">
-                <h3 class="text-h4">Elena Rossi</h3>
+<!-- Section 4: Creative Direction -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container" style="max-width: 1000px;">
+        <div class="text-center">
+          <p class="text-overline mb-2 reveal" style="color: var(--accent-secondary);">The Hands Behind the House</p>
+          <h2 class="text-h2 reveal" style="margin-bottom: 1rem;">Creative Direction</h2>
+          <p class="text-body reveal delay-100" style="color: var(--text-secondary); max-width: 36rem; margin: 0 auto var(--spacing-lg);">Two distinct voices, one shared standard. Meet the designers shaping every Zoveelle silhouette.</p>
+        </div>
+        <div class="grid grid-2 gap-lg">
+            <div class="director reveal delay-100">
+                <div class="director-frame">
+                    <button class="director-portrait" aria-expanded="false" aria-controls="director-bio-1" aria-label="Read Elena Rossi's biography">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Elena Rossi" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+                    </button>
+                </div>
+                <div class="flex" style="justify-content: space-between; align-items: baseline; margin-top: 1.5rem;">
+                    <h3 class="text-h4">Elena Rossi</h3>
+                    <span class="text-h5" style="font-family: var(--font-editorial); font-style: italic; color: var(--accent-secondary);">01</span>
+                </div>
                 <p class="text-overline">Head of Womenswear</p>
+                <p class="director-hint">Click to read more</p>
+                <div class="director-bio" id="director-bio-1" hidden>
+                    <p class="text-body" style="color: var(--text-secondary);">A graduate of Central Saint Martins, Elena Rossi has spent two decades perfecting the art of draped silhouette. Her hands-on direction bridges the atelier and the runway, ensuring every Zovelle piece balances sculptural drama with an effortless everyday ease.</p>
+                </div>
             </div>
-            <div class="reveal delay-200 text-center">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="Director 2" style="width: 100%; aspect-ratio: 3/4; object-fit: cover; margin-bottom: 1rem;">
-                <h3 class="text-h4">Julian Vance</h3>
+            <div class="director reveal delay-200">
+                <div class="director-frame">
+                    <button class="director-portrait" aria-expanded="false" aria-controls="director-bio-2" aria-label="Read Julian Vance's biography">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="Julian Vance" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+                    </button>
+                </div>
+                <div class="flex" style="justify-content: space-between; align-items: baseline; margin-top: 1.5rem;">
+                    <h3 class="text-h4">Julian Vance</h3>
+                    <span class="text-h5" style="font-family: var(--font-editorial); font-style: italic; color: var(--accent-secondary);">02</span>
+                </div>
                 <p class="text-overline">Head of Menswear</p>
+                <p class="director-hint">Click to read more</p>
+                <div class="director-bio" id="director-bio-2" hidden>
+                    <p class="text-body" style="color: var(--text-secondary);">Trained on Savile Row, Julian Vance brings a disciplined, architectural approach to menswear. He oversees our made-to-measure ateliers and is the voice behind Zovelle's structural tailoring, known for sharp lines, fluid cloth, and a fit that moves with the wearer.</p>
+                </div>
             </div>
         </div>
+      </div>
     </section>
 
-    <!-- Section 5: Timeline -->
-    <section class="section container text-center">
-        <h2 class="text-h3 reveal">Heritage</h2>
-        <div style="margin-top: 3rem; display: flex; justify-content: space-between; border-top: 2px solid var(--color-champagne); padding-top: 2rem;" class="reveal delay-100">
-            <div><h3 class="text-h4">1998</h3><p>Founded</p></div>
-            <div><h3 class="text-h4">2005</h3><p>First Flagship</p></div>
-            <div><h3 class="text-h4">2012</h3><p>Global Expansion</p></div>
-            <div><h3 class="text-h4">2026</h3><p>New Era</p></div>
+<!-- Section 5: Heritage Timeline -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container text-center">
+        <p class="text-overline mb-2 reveal" style="color: var(--accent-secondary);">Since 1987</p>
+        <h2 class="text-h2 reveal" style="margin-bottom: 1rem;">Heritage</h2>
+        <p class="text-body reveal delay-100" style="color: var(--text-secondary); max-width: 36rem; margin: 0 auto 3rem;">Four decades of quiet luxury, measured in milestones.</p>
+        <div class="reveal delay-100">
+          <div style="border-top: 2px solid var(--color-champagne);"></div>
+          <div class="grid grid-4 gap-md" style="position: relative;">
+            <div class="milestone">
+              <div class="milestone-dot"></div>
+              <p class="text-h4" style="font-family: var(--font-editorial); font-style: italic; color: var(--accent-secondary);">1998</p>
+              <p class="text-overline" style="margin-bottom: 0.5rem;">Founded</p>
+              <p class="text-body" style="color: var(--text-secondary); font-size: 0.9rem;">Zovelle opens its first atelier in London.</p>
+            </div>
+            <div class="milestone">
+              <div class="milestone-dot"></div>
+              <p class="text-h4" style="font-family: var(--font-editorial); font-style: italic; color: var(--accent-secondary);">2005</p>
+              <p class="text-overline" style="margin-bottom: 0.5rem;">First Flagship</p>
+              <p class="text-body" style="color: var(--text-secondary); font-size: 0.9rem;">A boutique arrives on New Bond Street.</p>
+            </div>
+            <div class="milestone">
+              <div class="milestone-dot"></div>
+              <p class="text-h4" style="font-family: var(--font-editorial); font-style: italic; color: var(--accent-secondary);">2012</p>
+              <p class="text-overline" style="margin-bottom: 0.5rem;">Global Expansion</p>
+              <p class="text-body" style="color: var(--text-secondary); font-size: 0.9rem;">Maisons open in Paris and New York.</p>
+            </div>
+            <div class="milestone">
+              <div class="milestone-dot"></div>
+              <p class="text-h4" style="font-family: var(--font-editorial); font-style: italic; color: var(--accent-secondary);">2026</p>
+              <p class="text-overline" style="margin-bottom: 0.5rem;">New Era</p>
+              <p class="text-body" style="color: var(--text-secondary); font-size: 0.9rem;">A digital-first chapter for the house.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section 6: Contact CTA -->
@@ -110,42 +193,107 @@
     <div class="container">
       <div class="footer-top grid grid-4">
         <div>
-          <div class="footer-brand">ZOVELLE</div>
-          <p style="color: rgba(255,255,255,0.7); max-width: 250px;">Elevating the everyday through uncompromising craftsmanship.</p>
+          <a href="../index.html" class="footer-brand" style="margin-bottom: 1.5rem;">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" transform="rotate(45 16 16)" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 11.5h11L13.5 20.5h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            ZOVELLE
+          </a>
+          <p style="color: rgba(255,255,255,0.7); max-width: 280px; margin-bottom: 2rem; font-size: 0.9rem;">London's most exclusive destination for bespoke tailoring and luxury outerwear. A curated sanctuary where every piece tells an extraordinary story.</p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://instagram.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.81l.53-4H14V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://x.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://youtube.com/@zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
         </div>
         <div>
-          <h4 class="footer-col-title">Pages</h4>
+          <h4 class="footer-col-title">Collections</h4>
+          <a href="../index.html" class="footer-link">Luxury Outerwear</a>
+          <a href="services.html" class="footer-link">Bespoke Suits</a>
+          <a href="home-2.html" class="footer-link">Accessories</a>
+          <a href="contact.html" class="footer-link">Gifting</a>
+          <a href="services.html" class="footer-link">Atelier Services</a>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Maison</h4>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="home-2.html" class="footer-link">Home 2</a>
           <a href="about.html" class="footer-link">About</a>
           <a href="services.html" class="footer-link">Services</a>
-          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="blog.html" class="footer-link">Journal</a>
           <a href="contact.html" class="footer-link">Contact</a>
         </div>
         <div>
-          <h4 class="footer-col-title">Links</h4>
-          <a href="home-2.html" class="footer-link">Home 2</a>
-          <a href="blog-detail.html" class="footer-link">Blog Detail</a>
-          <a href="sitemap.html" class="footer-link">Sitemap</a>
-          <a href="terms.html" class="footer-link">Terms</a>
-        </div>
-        <div>
-          <h4 class="footer-col-title">Newsletter</h4>
-          <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.7);">Subscribe for exclusive access to new collections and events.</p>
-          <div class="input-group">
-            <input type="email" class="input-field" placeholder=" " style="color: white; border-bottom-color: rgba(255,255,255,0.3);">
-            <label class="input-label" style="color: rgba(255,255,255,0.5);">Email Address</label>
-          </div>
+          <h4 class="footer-col-title">The Private List</h4>
+          <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Receive exclusive previews, private sale invitations, and styling insights before anyone else.</p>
+          <form style="display: flex; gap: 0.75rem;" onsubmit="return false;">
+            <input type="email" placeholder="Your email" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 1rem; color: white; border-radius: 4px; flex: 1; min-width: 0;" required>
+            <button type="submit" class="btn" style="background: var(--color-champagne); color: var(--color-plum); padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 4px; border: none; cursor: pointer;">JOIN</button>
+          </form>
         </div>
       </div>
+      
+      <div class="footer-separator">
+        <div class="footer-separator-icon">
+          <div class="footer-separator-dot"></div>
+        </div>
+      </div>
+      
       <div class="footer-bottom">
-        <div>&copy; 2026 ZOVELLE. All Rights Reserved.</div>
-        <div style="display: flex; gap: 1rem;">
+        <div>&copy; 2026 ZOVELLE. All rights reserved. Established 1987, London.</div>
+        <div style="display: flex; gap: 1.5rem;">
           <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
         </div>
       </div>
     </div>
+    
+    <a href="#" class="scroll-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
   </footer>
 
+  <script>
+    (function () {
+      document.querySelectorAll('.director').forEach(function (director) {
+        var portrait = director.querySelector('.director-portrait');
+        var bio = director.querySelector('.director-bio');
+        if (!portrait || !bio) return;
+
+        function toggle(force) {
+          var open = force !== undefined ? force : bio.hidden;
+          document.querySelectorAll('.director-bio').forEach(function (other) {
+            other.hidden = true;
+            var otherPortrait = other.closest('.director');
+            if (otherPortrait) otherPortrait.setAttribute('aria-expanded', 'false');
+          });
+          bio.hidden = !open;
+          director.setAttribute('aria-expanded', open ? 'true' : 'false');
+          portrait.setAttribute('aria-expanded', open ? 'true' : 'false');
+          if (open) bio.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        portrait.addEventListener('click', function (e) {
+          e.preventDefault();
+          toggle();
+        });
+        portrait.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      });
+    })();
+  </script>
   <script src="../assets/js/bundle.js"></script>
 </body>
 </html>

@@ -23,6 +23,9 @@
   --border-color: rgba(107, 81, 69, 0.2); /* Mocha at 20% opacity */
   --accent-primary: var(--color-champagne);
   --accent-secondary: var(--color-rosewood);
+  --color-error: #B3261E; /* Accessible red on light backgrounds */
+  --color-success: #1E7A46; /* Accessible green on light backgrounds */
+  --color-placeholder: rgba(21, 21, 21, 0.45);
   
   /* Typography */
   --font-editorial: 'Bodoni Moda', serif;

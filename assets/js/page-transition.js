@@ -19,6 +19,13 @@ class PageTransition {
       this.transitionEl.classList.remove('is-active');
     });
 
+    // Handle back button cache (bfcache)
+    window.addEventListener('pageshow', (e) => {
+      if (e.persisted) {
+        this.transitionEl.classList.remove('is-active');
+      }
+    });
+
     // Handle internal link clicks
     this.links.forEach(link => {
       link.addEventListener('click', (e) => {

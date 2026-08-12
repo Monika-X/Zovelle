@@ -44,7 +44,7 @@ files.forEach(file => {
 // Let's also bundle the JS to fix the CORS issue for local file:// testing
 // We'll just create a bundle.js that contains all the JS logic, and rewrite the <script> tags.
 const jsDir = path.join(dir, 'assets', 'js');
-const jsFiles = ['navbar.js', 'hero-slider.js', 'scroll-reveal.js', 'image-zoom.js', 'page-transition.js', 'dark-mode.js', 'rtl.js', 'lookbook.js', 'size-guide.js', 'cart.js', 'filters.js'];
+const jsFiles = ['navbar.js', 'hero-slider.js', 'scroll-reveal.js', 'image-zoom.js', 'page-transition.js', 'dark-mode.js', 'rtl.js', 'lookbook.js', 'size-guide.js', 'filters.js'];
 
 let bundle = '';
 jsFiles.forEach(f => {

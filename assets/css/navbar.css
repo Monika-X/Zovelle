@@ -32,20 +32,57 @@ body.dark-mode .navbar.scrolled {
 
 /* Logo */
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--color-plum);
+}
+
+.nav-brand .brand-mark {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.nav-brand .brand-lockup {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav-brand .brand-wordmark {
   font-family: var(--font-editorial);
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-plum);
+}
+
+.nav-brand .brand-tagline {
+  margin-top: 0.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
 }
 
 body.dark-mode .nav-brand {
   color: var(--color-porcelain);
 }
 
+body.dark-mode .nav-brand .brand-tagline {
+  color: var(--text-secondary);
+}
+
 .navbar:not(.scrolled) .nav-brand {
   color: var(--color-white); /* White text on transparent bg (assuming dark hero) */
+}
+
+.navbar:not(.scrolled) .nav-brand .brand-tagline {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Nav Links */
@@ -70,6 +107,21 @@ body.dark-mode .nav-link {
 
 .navbar:not(.scrolled) .nav-link {
   color: var(--color-white);
+}
+
+.nav-link.active {
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+body.dark-mode .nav-link.active,
+.navbar:not(.scrolled) .nav-link.active {
+  color: var(--color-champagne);
 }
 
 .nav-link:hover {
@@ -121,6 +173,23 @@ body.dark-mode .nav-icon.dark-mode-toggle .icon-sun {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1em;
+}
+
+/* Book Now CTA */
+.nav-cta {
+  padding: 0.65rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+body.dark-mode .nav-cta {
+  background-color: var(--color-champagne);
+  color: var(--color-plum);
+}
+
+body.dark-mode .nav-cta:hover {
+  background-color: var(--color-porcelain);
 }
 
 .nav-icon svg {

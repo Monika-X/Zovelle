@@ -29,9 +29,6 @@ const navIconsTemplate = () => `<div class="nav-icons">
           <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 100-10 5 5 0 000 10zM12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         </button>
         <button class="nav-icon rtl-toggle" aria-label="Toggle RTL">RTL</button>
-        <button class="nav-icon" aria-label="Cart">
-          <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-        </button>
         <button class="menu-toggle" aria-label="Toggle Menu">
           <span></span><span></span><span></span>
         </button>

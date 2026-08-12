@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZOVELLE | Terms & Conditions</title>
+  <title>ZOVELLE | Book an Appointment</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="stylesheet" href="../assets/css/main.css">
 
@@ -44,31 +44,104 @@
   </nav>
 
   <main>
+    <!-- Section 1: Booking Hero -->
     <section class="section-lg container text-center" style="padding-top: calc(var(--spacing-xxl) + 80px);">
-      <h1 class="text-h1 reveal">Terms & Conditions</h1>
-      <p class="text-subtitle reveal delay-100" style="margin-top: 1rem; color: var(--text-secondary);">Effective Date: January 1, 2026</p>
+      <p class="text-overline reveal mb-4" style="color: var(--color-champagne);">Private Appointments</p>
+      <h1 class="text-h1 reveal">Book an Appointment</h1>
+      <p class="text-subtitle reveal delay-100" style="max-width: 600px; margin: 1.5rem auto 0; color: var(--text-secondary);">Reserve a private session with our stylists and master tailors for a truly personal ZOVELLE experience.</p>
     </section>
 
-    <section class="section container" style="max-width: 800px;">
-      <div class="reveal">
-        <h2 class="text-h3" style="margin-bottom: 1rem;">1. Agreement to Terms</h2>
-        <p class="text-body" style="margin-bottom: 2rem; color: var(--text-secondary);">By accessing or using the ZOVELLE website and services, you agree to be bound by these Terms and Conditions. If you disagree with any part of the terms, you may not access our services.</p>
+    <!-- Section 2: Booking Form + Info -->
+    <section class="section container">
+      <div class="grid grid-2 gap-lg" style="align-items: start;">
+        <div class="reveal">
+          <h3 class="text-h3" style="margin-bottom: var(--spacing-md);">Reserve Your Session</h3>
+          <form id="booking-form" class="grid grid-2 gap-md" novalidate>
+            <div class="input-group">
+              <input type="text" class="input-field" placeholder=" " required>
+              <label class="input-label">Full Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" class="input-field" placeholder=" " required>
+              <label class="input-label">Email Address</label>
+            </div>
+            <div class="input-group">
+              <input type="tel" class="input-field" placeholder=" " required>
+              <label class="input-label">Phone</label>
+            </div>
+            <div class="input-group">
+              <select class="input-field" required>
+                <option value="" selected disabled></option>
+                <option>Personal Styling</option>
+                <option>Bespoke Tailoring</option>
+                <option>Wardrobe Consultation</option>
+                <option>Bridal Consultation</option>
+                <option>Private Shopping</option>
+              </select>
+              <label class="input-label">Service</label>
+            </div>
+            <div class="input-group">
+              <input type="date" class="input-field" required>
+              <label class="input-label">Preferred Date</label>
+            </div>
+            <div class="input-group">
+              <input type="time" class="input-field" required>
+              <label class="input-label">Preferred Time</label>
+            </div>
+            <div class="input-group">
+              <select class="input-field" required>
+                <option value="" selected disabled></option>
+                <option>Paris - 15 Rue Cambon</option>
+                <option>New York - 750 Madison Ave</option>
+              </select>
+              <label class="input-label">Boutique</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="input-field" placeholder=" ">
+              <label class="input-label">Special Requests (Optional)</label>
+            </div>
+            <div class="input-group" style="grid-column: span 2;">
+              <textarea class="input-field" rows="4" placeholder=" "></textarea>
+              <label class="input-label">Notes</label>
+            </div>
+            <div style="grid-column: span 2; text-align: center; margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking</button>
+            </div>
+          </form>
+          <div id="booking-success" class="form-success" hidden style="border: 1px solid var(--border-color);">
+            <h3 class="text-h3">Appointment Requested</h3>
+            <p class="text-body" style="color: var(--text-secondary);">Thank you for choosing ZOVELLE. Our concierge will confirm your appointment within 24 hours.</p>
+          </div>
+        </div>
 
-        <h2 class="text-h3" style="margin-bottom: 1rem;">2. Intellectual Property</h2>
-        <p class="text-body" style="margin-bottom: 2rem; color: var(--text-secondary);">All content included on this site, such as text, graphics, logos, images, audio clips, digital downloads, and data compilations, is the property of ZOVELLE or its content suppliers and protected by international copyright laws. The compilation of all content on this site is the exclusive property of ZOVELLE.</p>
+        <div class="reveal delay-200">
+          <h3 class="text-h3" style="margin-bottom: var(--spacing-md);">Boutique Hours</h3>
+          <div style="border-bottom: 1px solid var(--border-color); padding: 1rem 0; display: flex; justify-content: space-between;">
+            <span>Monday - Friday</span><span style="color: var(--text-secondary);">10:00 - 20:00</span>
+          </div>
+          <div style="border-bottom: 1px solid var(--border-color); padding: 1rem 0; display: flex; justify-content: space-between;">
+            <span>Saturday</span><span style="color: var(--text-secondary);">10:00 - 19:00</span>
+          </div>
+          <div style="border-bottom: 1px solid var(--border-color); padding: 1rem 0; display: flex; justify-content: space-between;">
+            <span>Sunday</span><span style="color: var(--text-secondary);">By appointment</span>
+          </div>
 
-        <h2 class="text-h3" style="margin-bottom: 1rem;">3. Products & Pricing</h2>
-        <p class="text-body" style="margin-bottom: 2rem; color: var(--text-secondary);">We make every effort to display as accurately as possible the colors, features, specifications, and details of the products available. However, we do not guarantee that the colors, features, specifications, and details will be accurate, complete, reliable, current, or free of other errors.</p>
+          <h3 class="text-h3" style="margin: var(--spacing-lg) 0 var(--spacing-sm);">At Your Service</h3>
+          <p class="text-body" style="margin-bottom: 1.5rem; color: var(--text-secondary);">Our concierge team is available to arrange private fittings, personal styling sessions, and bespoke tailoring consultations at any of our boutiques.</p>
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+            <a href="tel:+33123456789" class="link-underline" style="width: fit-content;">+33 1 23 45 67 89</a>
+            <a href="mailto:concierge@zovelle.com" class="link-underline" style="width: fit-content;">concierge@zovelle.com</a>
+          </div>
 
-        <h2 class="text-h3" style="margin-bottom: 1rem;">4. Bespoke Services</h2>
-        <p class="text-body" style="margin-bottom: 2rem; color: var(--text-secondary);">For our "Made to Measure" and bespoke services, a non-refundable deposit of 50% is required before the commencement of work. Due to the highly personalized nature of these garments, they are not eligible for returns or exchanges once the fabric has been cut.</p>
-        
-        <h2 class="text-h3" style="margin-bottom: 1rem;">5. Governing Law</h2>
-        <p class="text-body" style="color: var(--text-secondary);">These Terms shall be governed and construed in accordance with the laws of France, without regard to its conflict of law provisions.</p>
+          <div class="relative" style="background: var(--color-plum); color: var(--color-porcelain); padding: var(--spacing-md);">
+            <p class="text-overline" style="color: var(--color-champagne); margin-bottom: 1rem;">The ZOVELLE Promise</p>
+            <p class="text-body" style="color: rgba(247, 243, 238, 0.85);">Every appointment begins with a private welcome and a curated selection prepared exclusively for you.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  
+
   <footer class="footer">
     <div class="container">
       <div class="footer-top grid grid-4">
@@ -142,5 +215,21 @@
   </footer>
 
   <script src="../assets/js/bundle.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('booking-form');
+      const success = document.getElementById('booking-success');
+      if (!form || !success) return;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        form.hidden = true;
+        success.hidden = false;
+      });
+    });
+  </script>
 </body>
 </html>

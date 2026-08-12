@@ -11,7 +11,9 @@ body.dark-mode {
   --text-inverse: var(--color-plum);
   --border-color: rgba(247, 243, 238, 0.1);
   --accent-primary: var(--color-champagne);
-  
+  --color-error: #F2A9A0; /* Light red for contrast on dark backgrounds */
+  --color-placeholder: rgba(247, 243, 238, 0.45);
+  --color-success: #7BD9A1; /* Light green for contrast on dark backgrounds */  
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
@@ -20,8 +22,14 @@ body.dark-mode .card-product-img-wrapper {
   background-color: #1a0e1b;
 }
 
-body.dark-mode .card-product-action {
-  background: rgba(36, 19, 38, 0.9);
+body.dark-mode .btn-outline {
+  border-color: var(--color-porcelain);
+  color: var(--color-porcelain);
+}
+
+body.dark-mode .btn-outline:hover {
+  background-color: var(--color-champagne);
+  color: var(--color-plum);
 }
 
 body.dark-mode .input-field {
@@ -35,4 +43,15 @@ body.dark-mode .input-field:focus {
 body.dark-mode .input-field:focus ~ .input-label,
 body.dark-mode .input-field:not(:placeholder-shown) ~ .input-label {
   color: var(--color-champagne);
+}
+
+body.dark-mode .input-group.is-invalid .input-field,
+body.dark-mode .input-group.is-invalid .input-field:focus {
+  border-bottom-color: var(--color-error);
+}
+
+body.dark-mode .input-group.is-invalid .input-field:focus ~ .input-label,
+body.dark-mode .input-group.is-invalid .input-field:not(:placeholder-shown) ~ .input-label,
+body.dark-mode .input-group.is-invalid .input-label {
+  color: var(--color-error);
 }

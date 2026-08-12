@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZOVELLE | Contact & Boutiques</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="stylesheet" href="../assets/css/main.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +13,14 @@
 
   <nav class="navbar scrolled">
     <div class="container">
-      <div class="nav-brand">ZOVELLE</div>
+      
+<a href="../index.html" class="nav-brand" aria-label="ZOVELLE - Home">
+  <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" transform="rotate(45 16 16)" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 11.5h11L13.5 20.5h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="brand-lockup">
+    <span class="brand-wordmark">ZOVELLE</span>
+    <span class="brand-tagline">Elevating the Everyday</span>
+  </span>
+</a>
       <ul class="nav-menu">
         <li><a href="../index.html" class="nav-link link-underline">Home</a></li>
         <li><a href="home-2.html" class="nav-link link-underline">Home 2</a></li>
@@ -22,20 +30,12 @@
         <li><a href="contact.html" class="nav-link link-underline">Contact</a></li>
       </ul>
       <div class="nav-icons">
-        <button class="nav-icon" aria-label="Search">
-          <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </button>
-        <button class="nav-icon" aria-label="Account">
-          <svg viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        </button>
         <button class="nav-icon dark-mode-toggle" aria-label="Toggle Theme">
           <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
           <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 100-10 5 5 0 000 10zM12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         </button>
         <button class="nav-icon rtl-toggle" aria-label="Toggle RTL">RTL</button>
-        <button class="nav-icon" aria-label="Cart">
-          <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-        </button>
+        <a href="booking.html" class="btn btn-primary nav-cta">Book Now</a>
         <button class="menu-toggle" aria-label="Toggle Menu">
           <span></span><span></span><span></span>
         </button>
@@ -44,30 +44,53 @@
   </nav>
 
   <main>
-    <!-- Section 1: Hero -->
-    <section class="section-lg container text-center" style="padding-top: calc(var(--spacing-xxl) + 80px);">
-      <h1 class="text-h1 reveal">Global Boutiques</h1>
-      <p class="text-subtitle reveal delay-100" style="margin-top: 1rem; color: var(--text-secondary);">Visit our flagship locations for private appointments and bespoke tailoring.</p>
+<!-- Section 1: Hero -->
+    <section class="section-lg text-center" style="padding-top: calc(var(--spacing-xxl) + 80px); padding-bottom: var(--spacing-xl); background: linear-gradient(to bottom, rgba(21,21,21,0.62), rgba(36,19,38,0.8)), url('https://i.pinimg.com/736x/e0/46/67/e046671934cc0a4c7387cafbacdbb1f8.jpg') center / cover no-repeat; color: var(--color-porcelain);">
+      <h1 class="text-h1 reveal" style="color: var(--color-porcelain);">Global Boutiques</h1>
+      <p class="text-subtitle reveal delay-100" style="margin-top: 1rem; color: rgba(247,243,238,0.85);">Visit our flagship locations for private appointments and bespoke tailoring.</p>
     </section>
 
-    <!-- Section 2: Store Locations (Visual map representation) -->
-    <section class="section container-fluid" style="padding: 0;">
-        <div class="grid grid-2" style="gap: 0;">
-            <div class="reveal relative" style="height: 60vh;">
-                <img src="https://images.unsplash.com/photo-1542385151-efd9000785a0?w=1200&q=80" alt="Paris Boutique" class="object-cover w-full h-full">
-                <div class="absolute inset-0 flex flex-col justify-end p-8" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                    <h3 class="text-h3" style="color: white;">Paris</h3>
-                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">15 Rue Cambon, 75001 Paris, France</p>
-                    <a href="#" class="btn btn-outline" style="width: max-content; color: white; border-color: white;">Book Appointment</a>
+<!-- Section 2: Boutiques (dark full-width bands) -->
+    <section class="section container">
+        <div class="text-center reveal" style="margin-bottom: var(--spacing-lg);">
+            <p class="text-overline mb-2">Flagship Ateliers</p>
+            <h2 class="text-h2">Our Ateliers</h2>
+        </div>
+    </section>
+    <section class="container-fluid" style="padding: 0;">
+        <div class="boutique-band" style="background: linear-gradient(to bottom, rgba(21,21,21,0.35), rgba(21,21,21,0.9)), url('https://images.unsplash.com/photo-1439393161192-32360eb753f1?w=1600&auto=format&fit=crop&q=70&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWlmZmVsJTIwdG93ZXJ8ZW58MHx8MHx8fDA%3D') center / cover no-repeat;">
+            <div class="container flex" style="min-height: 72vh; align-items: flex-end; padding-block: var(--spacing-xl);">
+                <div style="max-width: 580px;">
+                    <p class="text-overline mb-2" style="color: rgba(247,243,238,0.75);">Flagship Atelier &mdash; Paris</p>
+                    <h2 class="text-h2" style="color: var(--color-porcelain);">Paris</h2>
+                    <p class="text-body" style="color: rgba(247,243,238,0.78); margin-top: 1rem; margin-bottom: 0.25rem;">15 Rue Cambon, 75001 Paris, France</p>
+                    <p class="text-caption" style="color: rgba(247,243,238,0.7); margin-bottom: 2rem;">Bespoke tailoring salon &amp; private fitting rooms. Open by appointment, Monday &ndash; Saturday.</p>
+                    <a href="booking.html" class="btn btn-outline" style="color: var(--color-champagne); border-color: var(--color-champagne);">Book Appointment</a>
                 </div>
             </div>
-            <div class="reveal delay-100 relative" style="height: 60vh;">
-                <img src="https://images.unsplash.com/photo-N7XodRrbzS0?w=1200&q=80" alt="New York Boutique" class="object-cover w-full h-full">
-                <div class="absolute inset-0 flex flex-col justify-end p-8" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                    <h3 class="text-h3" style="color: white;">New York</h3>
-                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">750 Madison Ave, NY 10065, USA</p>
-                    <a href="#" class="btn btn-outline" style="width: max-content; color: white; border-color: white;">Book Appointment</a>
+        </div>
+        <div class="boutique-band" style="background: linear-gradient(to bottom, rgba(21,21,21,0.35), rgba(21,21,21,0.9)), url('https://plus.unsplash.com/premium_photo-1661954654458-c673671d4a08?w=1600&auto=format&fit=crop&q=70&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fE5ldyUyMFlvcmt8ZW58MHx8MHx8fDA%3D') center / cover no-repeat;">
+            <div class="container flex" style="min-height: 72vh; align-items: flex-end; padding-block: var(--spacing-xl);">
+                <div style="max-width: 580px;">
+                    <p class="text-overline mb-2" style="color: rgba(247,243,238,0.75);">Flagship Atelier &mdash; New York</p>
+                    <h2 class="text-h2" style="color: var(--color-porcelain);">New York</h2>
+                    <p class="text-body" style="color: rgba(247,243,238,0.78); margin-top: 1rem; margin-bottom: 0.25rem;">750 Madison Ave, NY 10065, USA</p>
+                    <p class="text-caption" style="color: rgba(247,243,238,0.7); margin-bottom: 2rem;">International showroom &amp; trunk-show venue. Open by appointment, Monday &ndash; Saturday.</p>
+                    <a href="booking.html" class="btn btn-outline" style="color: var(--color-champagne); border-color: var(--color-champagne);">Book Appointment</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2.5: Interactive Map -->
+    <section class="section container">
+        <h2 class="text-h2 text-center reveal" style="margin-bottom: var(--spacing-lg);">Find a Boutique</h2>
+        <div class="grid grid-2 gap-md">
+            <div class="reveal relative" style="aspect-ratio: 4 / 3;">
+                <iframe title="ZOVELLE Paris boutique map" src="https://maps.google.com/maps?q=15%20Rue%20Cambon%2C%2075001%20Paris%2C%20France&z=15&output=embed" style="width: 100%; height: 100%; border: 0; border-radius: 8px;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="reveal delay-100 relative" style="aspect-ratio: 4 / 3;">
+                <iframe title="ZOVELLE New York boutique map" src="https://maps.google.com/maps?q=750%20Madison%20Ave%2C%20New%20York%2C%20NY%2010065&z=15&output=embed" style="width: 100%; height: 100%; border: 0; border-radius: 8px;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -75,52 +98,84 @@
     <!-- Section 3: Contact Details Grid -->
     <section class="section container">
         <div class="grid grid-3 text-center gap-lg">
-            <div class="reveal delay-100">
+<div class="reveal delay-100">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto 1rem; color: var(--accent-secondary);" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <h4 class="text-h4 mb-2">Client Services</h4>
                 <p class="text-body" style="color: var(--text-secondary); margin-bottom: 1rem;">Available Mon-Fri, 9am - 8pm CET</p>
-                <a href="tel:+33123456789" class="text-h5" style="color: var(--color-plum);">+33 1 23 45 67 89</a>
+                <a href="tel:+33123456789" class="text-h5" style="color: var(--text-primary);">+33 1 23 45 67 89</a>
             </div>
-            <div class="reveal delay-200">
+<div class="reveal delay-200">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto 1rem; color: var(--accent-secondary);" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 <h4 class="text-h4 mb-2">Email Inquiries</h4>
                 <p class="text-body" style="color: var(--text-secondary); margin-bottom: 1rem;">Usually respond within 24 hours.</p>
-                <a href="mailto:concierge@zovelle.com" class="text-h5" style="color: var(--color-plum);">concierge@zovelle.com</a>
+                <a href="mailto:concierge@zovelle.com" class="text-h5" style="color: var(--text-primary);">concierge@zovelle.com</a>
             </div>
-            <div class="reveal delay-300">
+<div class="reveal delay-300">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto 1rem; color: var(--accent-secondary);" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
                 <h4 class="text-h4 mb-2">Press & PR</h4>
                 <p class="text-body" style="color: var(--text-secondary); margin-bottom: 1rem;">For editorial and media requests.</p>
-                <a href="mailto:press@zovelle.com" class="text-h5" style="color: var(--color-plum);">press@zovelle.com</a>
+                <a href="mailto:press@zovelle.com" class="text-h5" style="color: var(--text-primary);">press@zovelle.com</a>
             </div>
         </div>
     </section>
 
-    <!-- Section 4: Enquiry Form -->
-    <section class="section container" style="max-width: 800px;">
-        <h2 class="text-h2 text-center reveal" style="margin-bottom: var(--spacing-lg);">Send a Message</h2>
-        <form class="grid grid-2 gap-md reveal delay-100">
-            <div class="input-group">
-                <input type="text" class="input-field" placeholder=" ">
-                <label class="input-label">First Name</label>
+<!-- Section 4: Correspondence & Enquiry Form (dark plum band) -->
+    <section class="section" style="background-color: var(--color-plum);">
+        <div class="container grid grid-2 gap-lg" style="align-items: center;">
+            <div class="reveal">
+                <p class="text-overline mb-2" style="color: var(--color-champagne);">Correspondence</p>
+                <h2 class="text-h2" style="color: var(--color-porcelain); margin-bottom: 1.5rem;">Send a Message</h2>
+                <p class="text-body" style="color: rgba(247,243,238,0.7); max-width: 32rem; margin-bottom: 2.5rem;">Share your couture enquiry, styling questions, or private appointment requests. Every message is reviewed personally by our concierge team.</p>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div class="flex" style="align-items: flex-start; gap: 1rem;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-champagne); margin-top: 0.25rem; flex-shrink: 0;" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <p class="text-overline" style="color: rgba(247,243,238,0.6); margin-bottom: 0.25rem;">Concierge Telephone</p>
+                            <a href="tel:+33123456789" class="text-body" style="color: var(--color-porcelain);">+33 1 23 45 67 89</a>
+                        </div>
+                    </div>
+                    <div class="flex" style="align-items: flex-start; gap: 1rem;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-champagne); margin-top: 0.25rem; flex-shrink: 0;" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <div>
+                            <p class="text-overline" style="color: rgba(247,243,238,0.6); margin-bottom: 0.25rem;">Email Inquiries</p>
+                            <a href="mailto:concierge@zovelle.com" class="text-body" style="color: var(--color-porcelain);">concierge@zovelle.com</a>
+                        </div>
+                    </div>
+                    <div class="flex" style="align-items: flex-start; gap: 1rem;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-champagne); margin-top: 0.25rem; flex-shrink: 0;" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div>
+                            <p class="text-overline" style="color: rgba(247,243,238,0.6); margin-bottom: 0.25rem;">Concierge Hours</p>
+                            <p class="text-body" style="color: var(--color-porcelain);">Mon &ndash; Fri, 9am &ndash; 8pm CET</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="input-group">
-                <input type="text" class="input-field" placeholder=" ">
-                <label class="input-label">Last Name</label>
-            </div>
-            <div class="input-group" style="grid-column: span 2;">
-                <input type="email" class="input-field" placeholder=" ">
-                <label class="input-label">Email Address</label>
-            </div>
-            <div class="input-group" style="grid-column: span 2;">
-                <input type="text" class="input-field" placeholder=" ">
-                <label class="input-label">Subject</label>
-            </div>
-            <div class="input-group" style="grid-column: span 2;">
-                <textarea class="input-field" rows="4" placeholder=" "></textarea>
-                <label class="input-label">Message</label>
-            </div>
-            <div style="grid-column: span 2; text-align: center; margin-top: 1rem;">
-                <button type="button" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
-            </div>
-        </form>
+            <form id="contact-form" class="grid grid-2 gap-md reveal delay-100" data-success="Thank you for your inquiry. Our concierge will be in touch shortly." onsubmit="return false;">
+                <div class="input-group">
+                    <input type="text" class="input-field input-field--dark" placeholder=" " required>
+                    <label class="input-label">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input-field input-field--dark" placeholder=" " required>
+                    <label class="input-label">Last Name</label>
+                </div>
+                <div class="input-group" style="grid-column: span 2;">
+                    <input type="email" class="input-field input-field--dark" placeholder=" " required>
+                    <label class="input-label">Email Address</label>
+                </div>
+                <div class="input-group" style="grid-column: span 2;">
+                    <input type="text" class="input-field input-field--dark" placeholder=" ">
+                    <label class="input-label">Subject</label>
+                </div>
+                <div class="input-group" style="grid-column: span 2;">
+                    <textarea class="input-field input-field--dark" rows="4" placeholder=" " required></textarea>
+                    <label class="input-label">Message</label>
+                </div>
+                <div style="grid-column: span 2; text-align: center; margin-top: 1rem;">
+                    <button type="submit" class="btn" style="background: var(--color-champagne); color: var(--color-plum); width: 100%;">Send Inquiry</button>
+                </div>
+            </form>
+        </div>
     </section>
 
     <!-- Section 5: FAQ Accordion Placeholder -->
@@ -133,19 +188,44 @@
             <div style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
                 <h4 class="text-h5" style="display: flex; justify-content: space-between; cursor: pointer;">Do you ship internationally? <span>+</span></h4>
             </div>
-            <div style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+<div style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
                 <h4 class="text-h5" style="display: flex; justify-content: space-between; cursor: pointer;">How do I care for silk garments? <span>+</span></h4>
+            </div>
+            <div style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                <h4 class="text-h5" style="display: flex; justify-content: space-between; cursor: pointer;">Do you offer bespoke tailoring appointments? <span>+</span></h4>
+            </div>
+            <div style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                <h4 class="text-h5" style="display: flex; justify-content: space-between; cursor: pointer;">Can I book a private appointment online? <span>+</span></h4>
+            </div>
+            <div style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                <h4 class="text-h5" style="display: flex; justify-content: space-between; cursor: pointer;">How long does a bespoke commission take? <span>+</span></h4>
             </div>
         </div>
     </section>
 
-    <!-- Section 6: Social Links -->
+<!-- Section 6: Social Links -->
     <section class="section text-center" style="background-color: var(--bg-primary);">
-        <p class="text-overline reveal mb-4">Follow the House</p>
-        <div class="flex justify-center gap-md reveal delay-100">
-            <a href="#" class="text-h4" style="color: var(--color-plum);">Instagram</a>
-            <a href="#" class="text-h4" style="color: var(--color-plum);">TikTok</a>
-            <a href="#" class="text-h4" style="color: var(--color-plum);">Pinterest</a>
+        <p class="text-overline reveal mb-2">Stay Connected</p>
+        <h2 class="text-h2 reveal delay-100" style="margin-bottom: var(--spacing-lg);">Follow the House</h2>
+        <div class="flex justify-center gap-lg reveal delay-200" style="gap: 3rem;">
+            <a href="https://instagram.com/zovelle" target="_blank" rel="noopener noreferrer" class="flex flex-col" style="align-items: center; gap: 0.75rem; color: var(--text-primary);" aria-label="ZOVELLE on Instagram">
+                <span class="social-icon" style="width: 60px; height: 60px; border-color: var(--border-color); color: var(--text-primary);" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </span>
+                <span class="text-overline">Instagram</span>
+            </a>
+            <a href="https://tiktok.com/@zovelle" target="_blank" rel="noopener noreferrer" class="flex flex-col" style="align-items: center; gap: 0.75rem; color: var(--text-primary);" aria-label="ZOVELLE on TikTok">
+                <span class="social-icon" style="width: 60px; height: 60px; border-color: var(--border-color); color: var(--text-primary);" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-2.59-2.59c.27 0 .53.04.77.12V9.77a5.7 5.7 0 0 0-.77-.05 5.66 5.66 0 1 0 5.66 5.66V9.66a7.38 7.38 0 0 0 4.3 1.38V7.93a4.3 4.3 0 0 1-3.22-2.11H16.6z"/></svg>
+                </span>
+                <span class="text-overline">TikTok</span>
+            </a>
+            <a href="https://pinterest.com/zovelle" target="_blank" rel="noopener noreferrer" class="flex flex-col" style="align-items: center; gap: 0.75rem; color: var(--text-primary);" aria-label="ZOVELLE on Pinterest">
+                <span class="social-icon" style="width: 60px; height: 60px; border-color: var(--border-color); color: var(--text-primary);" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.425.042-3.47.22-.938 1.402-5.965 1.402-5.965s-.357-.715-.357-1.774c0-1.66.962-2.9 2.161-2.9 1.02 0 1.512.765 1.512 1.683 0 1.025-.653 2.557-.99 3.978-.281 1.189.597 2.159 1.769 2.159 2.123 0 3.756-2.239 3.756-5.471 0-2.861-2.056-4.862-4.99-4.862-3.399 0-5.394 2.55-5.394 5.184 0 1.027.395 2.127.889 2.726a.36.36 0 0 1 .083.343c-.091.378-.293 1.194-.333 1.361-.052.219-.171.266-.394.16-1.47-.684-2.389-2.834-2.389-4.562 0-3.815 2.773-7.32 7.992-7.32 4.196 0 7.457 2.988 7.457 6.986 0 4.16-2.626 7.51-6.27 7.51-1.222 0-2.374-.636-2.769-1.387l-.753 2.865c-.272 1.047-1.007 2.358-1.5 3.158.707.199 1.409.314 2.227.314 6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                </span>
+                <span class="text-overline">Pinterest</span>
+            </a>
         </div>
     </section>
 
@@ -155,40 +235,72 @@
     <div class="container">
       <div class="footer-top grid grid-4">
         <div>
-          <div class="footer-brand">ZOVELLE</div>
-          <p style="color: rgba(255,255,255,0.7); max-width: 250px;">Elevating the everyday through uncompromising craftsmanship.</p>
+          <a href="../index.html" class="footer-brand" style="margin-bottom: 1.5rem;">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" transform="rotate(45 16 16)" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 11.5h11L13.5 20.5h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            ZOVELLE
+          </a>
+          <p style="color: rgba(255,255,255,0.7); max-width: 280px; margin-bottom: 2rem; font-size: 0.9rem;">London's most exclusive destination for bespoke tailoring and luxury outerwear. A curated sanctuary where every piece tells an extraordinary story.</p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://instagram.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.81l.53-4H14V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://x.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://youtube.com/@zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
         </div>
         <div>
-          <h4 class="footer-col-title">Pages</h4>
+          <h4 class="footer-col-title">Collections</h4>
+          <a href="../index.html" class="footer-link">Luxury Outerwear</a>
+          <a href="services.html" class="footer-link">Bespoke Suits</a>
+          <a href="home-2.html" class="footer-link">Accessories</a>
+          <a href="contact.html" class="footer-link">Gifting</a>
+          <a href="services.html" class="footer-link">Atelier Services</a>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Maison</h4>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="home-2.html" class="footer-link">Home 2</a>
           <a href="about.html" class="footer-link">About</a>
           <a href="services.html" class="footer-link">Services</a>
-          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="blog.html" class="footer-link">Journal</a>
           <a href="contact.html" class="footer-link">Contact</a>
         </div>
         <div>
-          <h4 class="footer-col-title">Links</h4>
-          <a href="home-2.html" class="footer-link">Home 2</a>
-          <a href="blog-detail.html" class="footer-link">Blog Detail</a>
-          <a href="sitemap.html" class="footer-link">Sitemap</a>
-          <a href="terms.html" class="footer-link">Terms</a>
-        </div>
-        <div>
-          <h4 class="footer-col-title">Newsletter</h4>
-          <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.7);">Subscribe for exclusive access to new collections and events.</p>
-          <div class="input-group">
-            <input type="email" class="input-field" placeholder=" " style="color: white; border-bottom-color: rgba(255,255,255,0.3);">
-            <label class="input-label" style="color: rgba(255,255,255,0.5);">Email Address</label>
-          </div>
+          <h4 class="footer-col-title">The Private List</h4>
+          <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Receive exclusive previews, private sale invitations, and styling insights before anyone else.</p>
+          <form style="display: flex; gap: 0.75rem;" onsubmit="return false;">
+            <input type="email" placeholder="Your email" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 1rem; color: white; border-radius: 4px; flex: 1; min-width: 0;" required>
+            <button type="submit" class="btn" style="background: var(--color-champagne); color: var(--color-plum); padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 4px; border: none; cursor: pointer;">JOIN</button>
+          </form>
         </div>
       </div>
+      
+      <div class="footer-separator">
+        <div class="footer-separator-icon">
+          <div class="footer-separator-dot"></div>
+        </div>
+      </div>
+      
       <div class="footer-bottom">
-        <div>&copy; 2026 ZOVELLE. All Rights Reserved.</div>
-        <div style="display: flex; gap: 1rem;">
+        <div>&copy; 2026 ZOVELLE. All rights reserved. Established 1987, London.</div>
+        <div style="display: flex; gap: 1.5rem;">
           <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
         </div>
       </div>
     </div>
+    
+    <a href="#" class="scroll-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
   </footer>
 
   <script src="../assets/js/bundle.js"></script>

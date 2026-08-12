@@ -235,6 +235,13 @@ class PageTransition {
       this.transitionEl.classList.remove('is-active');
     });
 
+    // Handle back button cache (bfcache)
+    window.addEventListener('pageshow', (e) => {
+      if (e.persisted) {
+        this.transitionEl.classList.remove('is-active');
+      }
+    });
+
     // Handle internal link clicks
     this.links.forEach(link => {
       link.addEventListener('click', (e) => {
@@ -393,45 +400,6 @@ class SizeGuide {
 
 
 
-/* --- cart.js --- */
-/**
- * ZOVELLE - Cart Sidebar
- */
-
-class Cart {
-  constructor() {
-    this.cartIcon = document.querySelector('button[aria-label="Cart"]');
-    this.addButtons = document.querySelectorAll('.card-product-action .btn');
-    this.init();
-  }
-
-  init() {
-    if (this.cartIcon) {
-      this.cartIcon.addEventListener('click', () => {
-        console.log('Toggle Cart Sidebar');
-        // Implementation would slide in the cart sidebar
-      });
-    }
-
-    this.addButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const productName = e.target.closest('.card-product').querySelector('.card-product-title').innerText;
-        console.log(`Added to cart: ${productName}`);
-        
-        // Visual feedback
-        const originalText = btn.innerText;
-        btn.innerText = 'Added';
-        setTimeout(() => {
-          btn.innerText = originalText;
-        }, 2000);
-      });
-    });
-  }
-}
-
-
-
 /* --- filters.js --- */
 /**
  * ZOVELLE - Content Filters
@@ -465,6 +433,93 @@ class Filters {
 
 
 
+/* --- newsletter.js --- */
+/**
+ * ZOVELLE - Newsletter & Email Form Submissions
+ * Inline success feedback with field reset (no page reload).
+ */
+
+class NewsletterForms {
+  constructor() {
+    this.bindFooterForms();
+    this.bindSubscribeButtons();
+    this.bindGeneralForms();
+  }
+
+  bindFooterForms() {
+    document.querySelectorAll('footer form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]');
+        if (!email || !this.isValidEmail(email.value.trim())) {
+          if (email) email.focus();
+          return;
+        }
+        form.reset();
+        this.showMessage(form, 'Thank you for joining The Private List! Please check your email to confirm your subscription.');
+      });
+    });
+  }
+
+  bindSubscribeButtons() {
+    const buttons = document.querySelectorAll('.subscribe-strip .btn-outline, [data-subscribe]');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const input = btn.parentElement.querySelector('input[type="email"]');
+        if (!input) return;
+        if (!this.isValidEmail(input.value.trim())) {
+          input.focus();
+          return;
+        }
+        input.value = '';
+        const strip = btn.closest('.subscribe-strip');
+        if (strip) {
+          const msg = strip.querySelector('.subscribe-msg');
+          if (msg) msg.hidden = false;
+          btn.disabled = true;
+          btn.textContent = 'Subscribed';
+        } else {
+          this.showMessage(btn.parentElement, 'Thank you - you are now subscribed.', true);
+        }
+      });
+    });
+  }
+
+  bindGeneralForms() {
+    document.querySelectorAll('form[data-success]').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        form.reset();
+        this.showMessage(form, form.getAttribute('data-success'));
+      });
+    });
+  }
+
+  isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
+  }
+
+  showMessage(anchor, message, forceDark) {
+    const onDark = forceDark || !!anchor.closest('footer') || !!anchor.closest('[style*="color-plum"]');
+    let msg = anchor.parentElement.querySelector('.form-success-msg');
+    if (!msg) {
+      msg = document.createElement('p');
+      msg.className = 'form-success-msg';
+      msg.style.marginTop = '0.75rem';
+      msg.style.fontSize = '0.9rem';
+      anchor.insertAdjacentElement('afterend', msg);
+    }
+    msg.style.color = onDark ? 'var(--color-champagne)' : 'var(--text-primary)';
+    msg.textContent = message;
+  }
+}
+
+
+
 /* --- main.js --- */
 /**
  * ZOVELLE - Master Initialization File
@@ -483,6 +538,25 @@ class Filters {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Highlight active nav link
+  const navLinks = document.querySelectorAll('.nav-link');
+  if (navLinks.length) {
+    let current = window.location.href.split('#')[0];
+    const dir = current.split('/').pop();
+    if (!dir || dir.indexOf('.') === -1) {
+      const match = current.replace(/\/+$/, '') + '/index.html';
+      current = [current, match];
+    } else {
+      current = [current];
+    }
+    navLinks.forEach(link => {
+      const raw = link.getAttribute('href');
+      if (!raw || raw === '#' || raw.charAt(0) === '#') return;
+      const resolved = link.href.split('#')[0];
+      if (current.indexOf(resolved) !== -1) link.classList.add('active');
+    });
+  }
+
   // Initialize core components
   new Navbar();
   new HeroSlider();
@@ -495,8 +569,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize interactive features
   new Lookbook();
   new SizeGuide();
-  new Cart();
   new Filters();
+  new NewsletterForms();
 
   // Remove loader if present
   const loader = document.querySelector('.loader');

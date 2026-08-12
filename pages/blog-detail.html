@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZOVELLE | Deconstructing the Modern Silhouette</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="stylesheet" href="../assets/css/main.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +13,14 @@
 
   <nav class="navbar scrolled">
     <div class="container">
-      <div class="nav-brand">ZOVELLE</div>
+      
+<a href="../index.html" class="nav-brand" aria-label="ZOVELLE - Home">
+  <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" transform="rotate(45 16 16)" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 11.5h11L13.5 20.5h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="brand-lockup">
+    <span class="brand-wordmark">ZOVELLE</span>
+    <span class="brand-tagline">Elevating the Everyday</span>
+  </span>
+</a>
       <ul class="nav-menu">
         <li><a href="../index.html" class="nav-link link-underline">Home</a></li>
         <li><a href="home-2.html" class="nav-link link-underline">Home 2</a></li>
@@ -22,20 +30,12 @@
         <li><a href="contact.html" class="nav-link link-underline">Contact</a></li>
       </ul>
       <div class="nav-icons">
-        <button class="nav-icon" aria-label="Search">
-          <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </button>
-        <button class="nav-icon" aria-label="Account">
-          <svg viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        </button>
         <button class="nav-icon dark-mode-toggle" aria-label="Toggle Theme">
           <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
           <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 100-10 5 5 0 000 10zM12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         </button>
         <button class="nav-icon rtl-toggle" aria-label="Toggle RTL">RTL</button>
-        <button class="nav-icon" aria-label="Cart">
-          <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-        </button>
+        <a href="booking.html" class="btn btn-primary nav-cta">Book Now</a>
         <button class="menu-toggle" aria-label="Toggle Menu">
           <span></span><span></span><span></span>
         </button>
@@ -46,52 +46,69 @@
   <main>
     <!-- Section 1: Article Hero -->
     <section class="relative" style="height: 70vh; margin-top: 80px;">
-      <img src="https://images.unsplash.com/photo-yC-Yzbqy7PY?w=1600&q=80" alt="Article Hero" class="object-cover w-full h-full">
+      <img src="https://images.unsplash.com/photo-1515347619363-2fa20c78a10e?w=1600&q=80" alt="Article Hero" class="object-cover w-full h-full">
     </section>
 
     <!-- Section 2: Article Body -->
     <section class="section container" style="max-width: 800px;">
       <div class="text-center reveal" style="margin-top: -6rem; position: relative; background: var(--bg-primary); padding: var(--spacing-lg) var(--spacing-md); box-shadow: 0 -10px 30px rgba(0,0,0,0.05);">
-        <p class="text-overline mb-2" style="color: var(--color-champagne);">Runway • Oct 12, 2026</p>
-        <h1 class="text-h2" style="margin-bottom: 2rem;">Deconstructing the Modern Silhouette</h1>
+        <p class="text-overline mb-2" id="post-meta" style="color: var(--color-champagne);">Runway • Oct 12, 2026</p>
+        <h1 class="text-h2" id="post-title" style="margin-bottom: 2rem;">Deconstructing the Modern Silhouette</h1>
         <p class="text-subtitle" style="font-style: italic; color: var(--text-secondary);">By Elena Rossi, Head of Womenswear</p>
       </div>
 
-      <div class="reveal delay-100" style="margin-top: 3rem;">
-        <p class="text-body" style="margin-bottom: 1.5rem;">In an era dominated by noise, clarity becomes the ultimate luxury. As we approached the design phase for the Fall/Winter 2027 collection, the central question was not what to add, but what could be meticulously stripped away.</p>
-        <p class="text-body" style="margin-bottom: 1.5rem;">The modern silhouette, as defined by the House of Zovelle, is rooted in architectural principles. We treat fabric not merely as a covering, but as a structural material capable of defining space around the human form.</p>
-        
-        <!-- Section 3: Pull Quote -->
-        <blockquote class="reveal delay-200" style="margin: 4rem 0; padding-left: 2rem; border-left: 4px solid var(--color-champagne);">
-          <p class="text-h3" style="font-family: var(--font-editorial); color: var(--color-plum); line-height: 1.4;">
-            "We are not designing garments; we are engineering confidence through geometry and textile."
-          </p>
-        </blockquote>
-
-        <p class="text-body" style="margin-bottom: 1.5rem;">Take, for instance, the evolution of our signature camel trench coat. Traditionally characterized by excessive epaulettes, belts, and hardware, our reimagining focuses purely on the drape of the heavy wool-cashmere blend and the precision of the raglan shoulder seam.</p>
+      <div class="reveal delay-100" style="margin-top: 3rem;" id="post-body-container">
+        <!-- Dynamic content goes here -->
       </div>
     </section>
 
-    <!-- Section 4: Image Gallery -->
-    <section class="container reveal">
-      <div class="grid grid-2 gap-sm">
-        <img src="https://images.unsplash.com/photo-xII7efH1G6o?w=800&q=80" alt="Process 1" style="width: 100%; height: 100%; object-fit: cover;">
-        <img src="https://images.unsplash.com/photo-Dl6jeyfihLk?w=800&q=80" alt="Process 2" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
-      <p class="text-caption text-center" style="margin-top: 1rem;">Behind the scenes at the Paris atelier during FW27 fittings.</p>
-    </section>
+
 
     <!-- Section 5: Comments / Share -->
     <section class="section container" style="max-width: 800px; border-bottom: 1px solid var(--border-color);">
         <div class="flex justify-between items-center reveal">
-            <div style="display: flex; gap: 1rem;">
-                <span class="text-overline">Share</span>
-                <a href="#" style="color: var(--color-plum);">IG</a>
-                <a href="#" style="color: var(--color-plum);">X</a>
-                <a href="#" style="color: var(--color-plum);">PT</a>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <span class="text-overline" style="margin-right: 0.5rem;">Share</span>
+                <a href="https://instagram.com/zovelle" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); display: flex; align-items: center; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://x.com/intent/tweet?text=Check+out+this+article+on+ZOVELLE" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); display: flex; align-items: center; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="X">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                    </svg>
+                </a>
+                <a href="https://pinterest.com/pin/create/button/" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); display: flex; align-items: center; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="Pinterest">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 20l4 -9"></path>
+                        <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                    </svg>
+                </a>
             </div>
             <div>
-                <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Leave a Note</button>
+                <button id="leave-note-btn" class="btn btn-outline" style="padding: 0.5rem 1rem;">Leave a Note</button>
+            </div>
+        </div>
+        <div id="note-form-container" style="display: none; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+            <h4 class="text-h5" style="margin-bottom: 1rem;">Leave a Note</h4>
+            <form id="note-form" style="display: flex; flex-direction: column; gap: 1rem;">
+                <div class="input-group">
+                    <input type="text" class="input-field" placeholder=" " required>
+                    <label class="input-label">Name</label>
+                </div>
+                <div class="input-group">
+                    <textarea class="input-field" placeholder=" " rows="3" required style="resize: vertical; min-height: 80px; padding-top: 1rem;"></textarea>
+                    <label class="input-label">Your Note</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: 1rem;">Submit Note</button>
+            </form>
+            <div id="note-success" style="display: none; padding: 1rem; background: rgba(255,255,255,0.05); border-left: 3px solid var(--color-champagne); margin-top: 1rem;">
+                Thank you for your note. It has been submitted for review.
             </div>
         </div>
     </section>
@@ -99,23 +116,8 @@
     <!-- Section 6: Related Articles -->
     <section class="section container">
         <h3 class="text-h3 text-center reveal" style="margin-bottom: 3rem;">Read Next</h3>
-        <div class="grid grid-2 gap-lg">
-            <div class="reveal delay-100 flex gap-md items-center">
-                <img src="https://images.unsplash.com/photo-ABDTiLqDhJA?w=300&q=80" alt="Next Post" style="width: 120px; height: 120px; object-fit: cover;">
-                <div>
-                    <p class="text-overline mb-1">Culture</p>
-                    <h4 class="text-h5" style="margin-bottom: 0.5rem;">Architecture & Apparel</h4>
-                    <a href="#" class="link-underline">Read Article</a>
-                </div>
-            </div>
-            <div class="reveal delay-200 flex gap-md items-center">
-                <img src="https://images.unsplash.com/photo-Cm7oKel-X2Q?w=300&q=80" alt="Next Post" style="width: 120px; height: 120px; object-fit: cover;">
-                <div>
-                    <p class="text-overline mb-1">Runway</p>
-                    <h4 class="text-h5" style="margin-bottom: 0.5rem;">Minimalism as a Statement</h4>
-                    <a href="#" class="link-underline">Read Article</a>
-                </div>
-            </div>
+        <div class="grid grid-2 gap-lg" id="read-next-container">
+            <!-- Dynamic read next items will be injected here -->
         </div>
     </section>
   </main>
@@ -125,42 +127,179 @@
     <div class="container">
       <div class="footer-top grid grid-4">
         <div>
-          <div class="footer-brand">ZOVELLE</div>
-          <p style="color: rgba(255,255,255,0.7); max-width: 250px;">Elevating the everyday through uncompromising craftsmanship.</p>
+          <a href="../index.html" class="footer-brand" style="margin-bottom: 1.5rem;">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" transform="rotate(45 16 16)" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 11.5h11L13.5 20.5h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            ZOVELLE
+          </a>
+          <p style="color: rgba(255,255,255,0.7); max-width: 280px; margin-bottom: 2rem; font-size: 0.9rem;">London's most exclusive destination for bespoke tailoring and luxury outerwear. A curated sanctuary where every piece tells an extraordinary story.</p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://instagram.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.81l.53-4H14V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://x.com/zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://youtube.com/@zovelle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
         </div>
         <div>
-          <h4 class="footer-col-title">Pages</h4>
+          <h4 class="footer-col-title">Collections</h4>
+          <a href="../index.html" class="footer-link">Luxury Outerwear</a>
+          <a href="services.html" class="footer-link">Bespoke Suits</a>
+          <a href="home-2.html" class="footer-link">Accessories</a>
+          <a href="contact.html" class="footer-link">Gifting</a>
+          <a href="services.html" class="footer-link">Atelier Services</a>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Maison</h4>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="home-2.html" class="footer-link">Home 2</a>
           <a href="about.html" class="footer-link">About</a>
           <a href="services.html" class="footer-link">Services</a>
-          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="blog.html" class="footer-link">Journal</a>
           <a href="contact.html" class="footer-link">Contact</a>
         </div>
         <div>
-          <h4 class="footer-col-title">Links</h4>
-          <a href="home-2.html" class="footer-link">Home 2</a>
-          <a href="blog-detail.html" class="footer-link">Blog Detail</a>
-          <a href="sitemap.html" class="footer-link">Sitemap</a>
-          <a href="terms.html" class="footer-link">Terms</a>
-        </div>
-        <div>
-          <h4 class="footer-col-title">Newsletter</h4>
-          <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.7);">Subscribe for exclusive access to new collections and events.</p>
-          <div class="input-group">
-            <input type="email" class="input-field" placeholder=" " style="color: white; border-bottom-color: rgba(255,255,255,0.3);">
-            <label class="input-label" style="color: rgba(255,255,255,0.5);">Email Address</label>
-          </div>
+          <h4 class="footer-col-title">The Private List</h4>
+          <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Receive exclusive previews, private sale invitations, and styling insights before anyone else.</p>
+          <form style="display: flex; gap: 0.75rem;" onsubmit="return false;">
+            <input type="email" placeholder="Your email" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 1rem; color: white; border-radius: 4px; flex: 1; min-width: 0;" required>
+            <button type="submit" class="btn" style="background: var(--color-champagne); color: var(--color-plum); padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 4px; border: none; cursor: pointer;">JOIN</button>
+          </form>
         </div>
       </div>
+      
+      <div class="footer-separator">
+        <div class="footer-separator-icon">
+          <div class="footer-separator-dot"></div>
+        </div>
+      </div>
+      
       <div class="footer-bottom">
-        <div>&copy; 2026 ZOVELLE. All Rights Reserved.</div>
-        <div style="display: flex; gap: 1rem;">
+        <div>&copy; 2026 ZOVELLE. All rights reserved. Established 1987, London.</div>
+        <div style="display: flex; gap: 1.5rem;">
           <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
         </div>
       </div>
     </div>
+    
+    <a href="#" class="scroll-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
   </footer>
 
+<script>
+    (function () {
+      var postData = {
+        1: { img: 'https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?w=1600&q=80', meta: 'Atelier • Sep 28, 2026', title: 'The Anatomy of a Bespoke Suit', desc: 'Tracing the 40-hour journey from fabric selection to final fitting.', quote: 'A bespoke suit is not just made; it is sculpted to the individual.' },
+        2: { img: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1600&q=80', meta: 'Culture • Sep 15, 2026', title: 'Architecture & Apparel', desc: 'How brutalist design principles influence our structural outerwear.', quote: 'Fashion and architecture share the same purpose: to create space that empowers.' },
+        3: { img: 'https://images.unsplash.com/photo-1653875842174-429c1b467548?w=1600&q=80', meta: 'Runway • Aug 30, 2026', title: 'Minimalism as a Statement', desc: 'Why the loudest voices in fashion are often the quietest.', quote: 'Minimalism is the art of saying more by showing less.' },
+        4: { img: 'https://images.unsplash.com/photo-1643616964756-7e2822e38ee9?q=80&w=713&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', meta: 'Runway • Jul 18, 2026', title: 'The Return of the Corset', desc: 'A modern reinterpretation of history\'s most sculptural garment.', quote: 'The corset is no longer about restriction; it is a celebration of form.' },
+        5: { img: 'https://i.pinimg.com/736x/c0/a4/47/c0a4473306d9c71e432e23cb1b9bd663.jpg', meta: 'Atelier • Jun 30, 2026', title: 'Hand-Finishing: The Final 10%', desc: 'The invisible stitches that separate luxury from the ordinary.', quote: 'True luxury is found in the unseen hours of meticulous handcraft.' },
+        6: { img: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=1600&q=80', meta: 'Culture • Jun 14, 2026', title: 'Slow Fashion, Fast Decisions', desc: 'Why buying less but better is the ultimate luxury statement.', quote: 'Sustainability is not a trend, but a fundamental pillar of modern elegance.' },
+        7: { img: 'https://i.pinimg.com/1200x/23/76/d7/2376d736f49bac595eabf972e8c827e8.jpg', meta: 'Runway • May 22, 2026', title: 'Draping as Dialogue', desc: 'How fabric talks back to the designer\'s hand.', quote: 'Draping is a conversation between the material and the silhouette.' },
+        8: { img: 'https://images.unsplash.com/photo-1750941744510-f91d797dacdd?w=1600&q=80', meta: 'Atelier • May 05, 2026', title: 'Inside the Fabric Vault', desc: 'Rare mills, archived weaves, and the cloths we never repeat.', quote: 'Every roll of fabric in our vault holds a story waiting to be worn.' },
+        9: { img: 'https://images.unsplash.com/photo-1729522343285-728bd9371d26?w=1600&q=80', meta: 'Culture • Apr 19, 2026', title: 'The Psychology of Colour', desc: 'What our palettes say before a single word is spoken.', quote: 'Colour is the silent language of emotion in every collection.' },
+        10: { img: 'https://images.unsplash.com/photo-1746475707784-f10e1e830fe4?w=1600&q=80', meta: 'Runway • Mar 28, 2026', title: 'Tailoring for a New Era', desc: 'Soft shoulders, fluid cloth, and the death of the stiff suit.', quote: 'Modern tailoring must move with the wearer, not confine them.' },
+        11: { img: 'https://media.istockphoto.com/id/2265041023/photo/senior-asian-woman-craft-entrepreneur-pulls-resist-stitches-from-indigo-fabric-close-up.webp?a=1&b=1&s=612x612&w=0&k=20&c=X0Qt3Rif_qDczx5qRezAoUWwifvkNs8s4lzC__VDB94=', meta: 'Atelier • Mar 10, 2026', title: 'Seams That Tell Stories', desc: 'Hand-stitched edges and the makers behind them.', quote: 'A single seam can reveal the soul of the artisan who sewed it.' },
+        12: { img: 'https://plus.unsplash.com/premium_photo-1699973056461-5f80e170095b?w=1600&q=80', meta: 'Culture • Feb 20, 2026', title: 'Rituals of the Dressing Room', desc: 'The private ceremony of getting dressed, honoured.', quote: 'Getting dressed should feel like an empowering daily ritual.' },
+        13: { img: 'https://images.unsplash.com/photo-1494228766058-1430438d10fc?w=1600&q=80', meta: 'Runway • Feb 02, 2026', title: 'Shaping the Shoulder', desc: 'From pagoda to power, the shoulder\'s century of reinvention.', quote: 'The shoulder line dictates the attitude of the entire garment.' },
+        14: { img: 'https://images.unsplash.com/photo-1534445810636-67e8b1dbf706?w=1600&q=80', meta: 'Atelier • Jan 15, 2026', title: 'Buttons & Closures', desc: 'Why the smallest details take the longest to perfect.', quote: 'A beautifully crafted button is the punctuation mark of an outfit.' },
+        15: { img: 'https://images.unsplash.com/photo-1535730142260-496e3db19f6f?w=1600&q=80', meta: 'Culture • Jan 03, 2026', title: 'Fashion in the Digital Age', desc: 'Virtual try-ons and the future of the fitting room.', quote: 'Technology will never replace touch, but it can expand our vision.' }
+      };
+
+      var urlParams = new URLSearchParams(window.location.search);
+      var postNum = parseInt(urlParams.get('post')) || 1;
+      var data = postData[postNum] || postData[1];
+
+      var heroImg = document.querySelector('.relative img');
+      if (heroImg) heroImg.src = data.img;
+
+      var metaEl = document.getElementById('post-meta');
+      if (metaEl) metaEl.textContent = data.meta;
+
+      var titleEl = document.getElementById('post-title');
+      if (titleEl) {
+        titleEl.textContent = data.title;
+        document.title = 'ZOVELLE | ' + data.title;
+      }
+
+      var bodyContainer = document.getElementById('post-body-container');
+      if (bodyContainer) {
+        bodyContainer.innerHTML = `
+          <p class="text-body" style="margin-bottom: 1.5rem;">${data.desc}</p>
+          <p class="text-body" style="margin-bottom: 1.5rem;">At ZOVELLE, we believe that true elegance lies in the details. Every piece we create is a testament to our commitment to craftsmanship and timeless design. The modern silhouette is rooted in architectural principles, treating fabric not merely as a covering, but as a structural material capable of defining space around the human form.</p>
+          <blockquote class="reveal delay-200 active" style="margin: 4rem 0; padding-left: 2rem; border-left: 4px solid var(--color-champagne);">
+            <p class="text-h3" style="font-family: var(--font-editorial); color: var(--text-primary); line-height: 1.4;">
+              "${data.quote}"
+            </p>
+          </blockquote>
+          <p class="text-body" style="margin-bottom: 1.5rem;">This philosophy is woven into the very fabric of our collections. As we continue to explore new horizons in fashion, we remain grounded in the principles that have defined our brand from the beginning, stripping away the excess to reveal the purity of form.</p>
+        `;
+      }
+
+      var readNextContainer = document.getElementById('read-next-container');
+      if (readNextContainer) {
+        var next1 = postNum < 15 ? postNum + 1 : 1;
+        var next2 = next1 < 15 ? next1 + 1 : 1;
+        
+        var nextPosts = [next1, next2];
+        var delays = [100, 200];
+        var readNextHtml = '';
+        
+        nextPosts.forEach(function(id, index) {
+          var pData = postData[id];
+          var category = pData.meta.split('•')[0].trim();
+          readNextHtml += `
+            <a href="blog-detail.html?post=${id}" class="reveal delay-${delays[index]} flex gap-md items-center" style="text-decoration: none; color: inherit;">
+                <img src="${pData.img}" alt="${pData.title}" style="width: 120px; height: 120px; object-fit: cover;">
+                <div>
+                    <p class="text-overline mb-1">${category}</p>
+                    <h4 class="text-h5" style="margin-bottom: 0.5rem;">${pData.title}</h4>
+                    <span class="link-underline">Read Article</span>
+                </div>
+            </a>
+          `;
+        });
+        
+        readNextContainer.innerHTML = readNextHtml;
+      }
+
+      var noteBtn = document.getElementById('leave-note-btn');
+      var noteContainer = document.getElementById('note-form-container');
+      var noteForm = document.getElementById('note-form');
+      var noteSuccess = document.getElementById('note-success');
+
+      if (noteBtn && noteContainer) {
+        noteBtn.addEventListener('click', function() {
+          if (noteContainer.style.display === 'none') {
+            noteContainer.style.display = 'block';
+            noteBtn.textContent = 'Cancel';
+          } else {
+            noteContainer.style.display = 'none';
+            noteBtn.textContent = 'Leave a Note';
+          }
+        });
+      }
+
+      if (noteForm) {
+noteForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          noteForm.reset();
+          noteForm.style.display = 'none';
+          noteSuccess.style.display = 'block';
+          noteBtn.style.display = 'none';
+        });
+      }
+    })();
+  </script>
   <script src="../assets/js/bundle.js"></script>
 </body>
 </html>

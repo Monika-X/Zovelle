@@ -33,9 +33,23 @@
 }
 
 .footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--font-editorial);
-  font-size: 2.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   margin-bottom: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-brand .brand-mark {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
 }
 
 .footer-col-title {
@@ -59,12 +73,80 @@
 }
 
 .footer-bottom {
-  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
   color: rgba(247, 243, 238, 0.5);
+  padding-bottom: 2rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all var(--transition-fast);
+}
+
+.social-icon:hover {
+  background: var(--color-champagne);
+  color: var(--color-plum);
+  border-color: var(--color-champagne);
+}
+
+.footer-separator {
+  position: relative;
+  text-align: center;
+  margin: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-separator-icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-plum);
+}
+
+.footer-separator-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-champagne);
+  border-radius: 50%;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-champagne);
+  color: var(--color-plum);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+  transition: transform var(--transition-fast);
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-4px);
 }
 
 @media (max-width: 768px) {
