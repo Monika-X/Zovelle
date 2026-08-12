@@ -226,7 +226,97 @@ body.dark-mode .menu-toggle span {
   background-color: var(--color-porcelain);
 }
 
+/* Morph hamburger into an X when the drawer is open */
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Lock page scroll while the mobile drawer is open */
+html.menu-open,
+body.menu-open {
+  overflow: hidden;
+}
+
 @media (max-width: 1024px) {
   .nav-menu { display: none; }
   .menu-toggle { display: flex; }
+}
+
+/* Solid Navbar Variant
+   For pages whose header section is light (no dark hero image), so the
+   brand, icons and hamburger stay readable at the top of the page even
+   before the user scrolls. Must come after the :not(.scrolled) rules. */
+.navbar.solid {
+  background-color: rgba(247, 243, 238, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+.navbar.solid .nav-brand,
+.navbar.solid .nav-icon {
+  color: var(--color-plum);
+}
+
+.navbar.solid .nav-brand .brand-tagline {
+  color: var(--text-secondary);
+}
+
+.navbar.solid .nav-link {
+  color: var(--color-plum);
+}
+
+.navbar.solid .nav-link.active,
+.navbar.solid .nav-link:hover {
+  color: var(--accent-secondary);
+}
+
+.navbar.solid .menu-toggle span {
+  background-color: var(--color-plum);
+}
+
+.navbar.solid .nav-cta {
+  background-color: var(--color-plum);
+  color: var(--color-porcelain);
+}
+
+body.dark-mode .navbar.solid {
+  background-color: rgba(36, 19, 38, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .navbar.solid .nav-brand,
+body.dark-mode .navbar.solid .nav-link,
+body.dark-mode .navbar.solid .nav-icon {
+  color: var(--color-porcelain);
+}
+
+body.dark-mode .navbar.solid .nav-brand .brand-tagline {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .navbar.solid .nav-link.active,
+body.dark-mode .navbar.solid .nav-link:hover {
+  color: var(--color-champagne);
+}
+
+body.dark-mode .navbar.solid .menu-toggle span {
+  background-color: var(--color-porcelain);
+}
+
+body.dark-mode .navbar.solid .nav-cta {
+  background-color: var(--color-champagne);
+  color: var(--color-plum);
+}
+
+@media (max-width: 1024px) {
+  .navbar.solid { padding: 0.75rem 0; }
 }

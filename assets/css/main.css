@@ -19,6 +19,7 @@
 @import url('./hero.css');
 @import url('./dark-mode.css');
 @import url('./rtl.css');
+@import url('./responsive.css');
 
 /* Global Footer Styles */
 .footer {

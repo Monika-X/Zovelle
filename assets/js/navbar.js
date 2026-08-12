@@ -34,9 +34,12 @@ class Navbar {
   }
 
   toggleMobileMenu() {
-    this.navMenu.classList.toggle('active');
-    // Toggle icon animation could go here
-    if (this.navMenu.classList.contains('active')) {
+    const isOpen = !this.navMenu.classList.contains('active');
+    this.navMenu.classList.toggle('active', isOpen);
+    this.menuToggle.classList.toggle('active', isOpen);
+    this.body.classList.toggle('menu-open', isOpen);
+    document.documentElement.classList.toggle('menu-open', isOpen);
+    if (isOpen) {
       this.navbar.classList.add('scrolled'); // Ensure bg is solid when open
     } else {
       this.handleScroll(); // Re-evaluate based on scroll pos
