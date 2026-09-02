@@ -39,8 +39,8 @@
   gap: 0.75rem;
   font-family: var(--font-editorial);
   font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-decoration: none;
@@ -48,9 +48,27 @@
 }
 
 .footer-brand .brand-mark {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   flex-shrink: 0;
+}
+
+.footer-brand .brand-lockup {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-align: left;
+}
+
+.footer-brand .brand-tagline {
+  margin-top: 0.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-champagne);
+  opacity: 0.85;
 }
 
 .footer-col-title {
