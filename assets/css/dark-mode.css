@@ -7,7 +7,7 @@ body.dark-mode {
   --bg-secondary: #1a0e1b;
   --bg-inverse: var(--color-porcelain);
   --text-primary: var(--color-porcelain);
-  --text-secondary: rgba(247, 243, 238, 0.7);
+  --text-secondary: rgba(247, 243, 238, 0.85);
   --text-inverse: var(--color-plum);
   --border-color: rgba(247, 243, 238, 0.1);
   --accent-primary: var(--color-champagne);

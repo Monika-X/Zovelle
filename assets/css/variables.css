@@ -7,7 +7,8 @@
   --color-plum: #241326;     /* Midnight Plum */
   --color-champagne: #D6B98C; /* Champagne */
   --color-porcelain: #F7F3EE; /* Porcelain */
-  --color-mocha: #6B5145;     /* Mocha */
+  --color-mocha: #4A3528;     /* Rich Espresso Mocha (high contrast for light mode) */
+  --color-mocha-soft: #6B5145; /* Soft Mocha */
   --color-rosewood: #8E5962;  /* Rosewood */
   --color-ink: #151515;       /* Ink Black */
   --color-white: #ffffff;

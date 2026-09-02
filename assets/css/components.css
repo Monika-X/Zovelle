@@ -40,6 +40,17 @@
   color: var(--color-porcelain);
 }
 
+/* Outline button on dark/inverse backgrounds (champagne, fills champagne on hover) */
+.btn-outline--light {
+  color: var(--color-champagne);
+  border-color: var(--color-champagne);
+}
+.btn-outline--light:hover {
+  background-color: var(--color-champagne);
+  color: var(--color-plum);
+  border-color: var(--color-champagne);
+}
+
 .btn-light {
   background-color: var(--color-porcelain);
   color: var(--color-plum);
@@ -107,12 +118,19 @@
 
 .card-product-title {
   font-family: var(--font-ui);
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  font-variation-settings: normal;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .card-product-price {
   font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 400;
   color: var(--text-secondary);
 }
 
@@ -216,6 +234,10 @@
 
 .input-field::placeholder {
   color: var(--color-placeholder);
+}
+
+.input-field--light::placeholder {
+  color: rgba(247, 243, 238, 0.65);
 }
 
 .input-field:focus {

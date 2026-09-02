@@ -13,11 +13,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, 
+.text-h1, .text-h2, .text-h3, .text-h4, .text-h5,
 .font-editorial {
   font-family: var(--font-editorial);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.01em;
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 6, "wght" 500;
 }
 
 h1, .text-h1 {
@@ -54,7 +57,8 @@ h5, .text-h5 {
   font-family: var(--font-ui);
   font-size: 1.125rem;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
+  color: var(--text-secondary);
 }
 
 .text-body {
