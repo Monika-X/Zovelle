@@ -55,20 +55,27 @@
     flex-shrink: 0;
   }
 
+  .navbar .nav-menu.active .nav-link,
   .nav-menu.active .nav-link {
     color: var(--color-plum);
     font-size: 1rem;
     letter-spacing: 0.08em;
   }
 
+  .navbar .nav-menu.active .nav-link:hover,
+  .navbar .nav-menu.active .nav-link.active,
   .nav-menu.active .nav-link:hover,
   .nav-menu.active .nav-link.active {
     color: var(--color-champagne);
   }
 
   body.dark-mode .nav-menu.active { background-color: var(--color-plum); }
+  body.dark-mode .navbar .nav-menu.active .nav-link,
   body.dark-mode .nav-menu.active .nav-link { color: var(--color-porcelain); }
-  body.dark-mode .nav-menu.active .nav-link:hover { color: var(--color-champagne); }
+  body.dark-mode .navbar .nav-menu.active .nav-link:hover,
+  body.dark-mode .navbar .nav-menu.active .nav-link.active,
+  body.dark-mode .nav-menu.active .nav-link:hover,
+  body.dark-mode .nav-menu.active .nav-link.active { color: var(--color-champagne); }
 
   html[dir="rtl"] .nav-menu.active {
     right: auto;

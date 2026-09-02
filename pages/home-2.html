@@ -6,36 +6,9 @@
   <title>ZOVELLE | Alternate Home</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
   <link rel="stylesheet" href="../assets/css/main.css">
-<style>
-    /* ============ HOME 2 - "Maison Privee" Dark Editorial ============ */
-    .home2-luxe {
-      background-color: #151515;
-      color: #F7F3EE;
-    }
-
-    /* Navbar: ink with champagne hairline */
-    .home2-luxe .navbar {
-      background-color: rgba(21, 21, 21, 0.92);
-      border-bottom: 1px solid rgba(214, 185, 140, 0.18);
-    }
-    .home2-luxe .navbar .nav-brand,
-    .home2-luxe .navbar .nav-link {
-      color: #F7F3EE;
-    }
-    .home2-luxe .navbar .brand-tagline {
-      color: rgba(247, 243, 238, 0.45);
-    }
-    .home2-luxe .navbar .nav-link.active,
-    .home2-luxe .navbar .nav-link:hover {
-      color: #D6B98C;
-    }
-    .home2-luxe .navbar .nav-icon {
-      color: #F7F3EE;
-    }
-    .home2-luxe .navbar .nav-icon:hover {
-      color: #D6B98C;
-    }
-
+  <style>
+    /* ============ HOME 2 - Alternate Editorial Layout ============ */
+    
     /* 01 - Hero */
     .home2-hero {
       min-height: 100vh;
@@ -54,7 +27,7 @@
       align-items: center;
       justify-content: center;
       gap: 1.25rem;
-      color: #D6B98C;
+      color: var(--color-champagne);
       font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.4em;
@@ -75,11 +48,12 @@
       text-transform: uppercase;
       line-height: 1.05;
       margin-bottom: 2.5rem;
+      color: var(--color-porcelain);
     }
     .home2-hero-sub {
       max-width: 500px;
       margin-inline: auto;
-      color: rgba(247, 243, 238, 0.72);
+      color: rgba(247, 243, 238, 0.85);
       font-weight: 400;
       line-height: 1.9;
       margin-bottom: 3rem;
@@ -87,8 +61,8 @@
     .home2-btn {
       display: inline-block;
       padding: 0.95rem 3.25rem;
-      border: 1px solid #D6B98C;
-      color: #D6B98C;
+      border: 1px solid var(--color-champagne);
+      color: var(--color-champagne);
       font-size: 0.78rem;
       font-weight: 600;
       letter-spacing: 0.3em;
@@ -96,13 +70,14 @@
       transition: background-color var(--transition-fast), color var(--transition-fast);
     }
     .home2-btn:hover {
-      background-color: #D6B98C;
-      color: #151515;
+      background-color: var(--color-champagne);
+      color: var(--color-plum);
     }
 
     /* 02 - Philosophy */
     .home2-philosophy {
       padding-block: var(--spacing-xl) var(--spacing-lg);
+      background-color: var(--bg-primary);
     }
     .home2-quote {
       font-size: clamp(2rem, 4.5vw, 3.4rem);
@@ -110,21 +85,23 @@
       line-height: 1.4;
       max-width: 880px;
       margin-inline: auto;
-      color: #F7F3EE;
+      color: var(--text-primary);
     }
     .home2-philosophy .text-overline {
       margin-top: 2.5rem;
       letter-spacing: 0.4em;
-      color: #D6B98C;
+      color: var(--color-champagne);
     }
 
     /* 03 - Spotlight */
     .home2-spotlight {
       padding-block: var(--spacing-xl);
+      background-color: var(--bg-primary);
     }
     .home2-frame {
       padding: 0.625rem;
-      border: 1px solid rgba(214, 185, 140, 0.35);
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-secondary);
     }
     .home2-frame img {
       width: 100%;
@@ -132,22 +109,27 @@
       display: block;
     }
     .home2-spotlight-text {
-      color: #F7F3EE;
+      color: var(--text-primary);
     }
     .home2-spotlight-text h2 {
       font-size: clamp(2rem, 4vw, 3.25rem);
       font-weight: 400;
+      color: var(--text-primary);
     }
     .home2-spotlight-text p {
-      color: rgba(247, 243, 238, 0.7);
+      color: var(--text-secondary);
     }
     .home2-spotlight-text .link-underline {
-      color: #D6B98C;
+      color: var(--accent-secondary);
+    }
+    body.dark-mode .home2-spotlight-text .link-underline {
+      color: var(--color-champagne);
     }
 
     /* 04 - Trending */
     .home2-trending {
       padding-block: var(--spacing-xl);
+      background-color: var(--bg-primary);
     }
     .home2-trending-title {
       display: flex;
@@ -155,13 +137,14 @@
       justify-content: center;
       gap: 1.5rem;
       margin-bottom: var(--spacing-lg);
+      color: var(--text-primary);
     }
     .home2-trending-title::before,
     .home2-trending-title::after {
       content: '';
       width: 64px;
       height: 1px;
-      background: rgba(214, 185, 140, 0.5);
+      background: var(--border-color);
     }
     .home2-card {
       position: relative;
@@ -169,6 +152,7 @@
     .home2-card-media {
       overflow: hidden;
       margin-bottom: 1.25rem;
+      background-color: var(--bg-secondary);
     }
     .home2-card-media img {
       width: 100%;
@@ -184,22 +168,26 @@
       font-family: var(--font-editorial);
       font-style: italic;
       font-size: 1.1rem;
-      color: #D6B98C;
+      color: var(--color-champagne);
       margin-bottom: 0.5rem;
     }
     .home2-card h4 {
-      color: #F7F3EE;
+      color: var(--text-primary);
       margin-bottom: 0.35rem;
     }
     .home2-card p {
-      color: rgba(247, 243, 238, 0.6);
+      color: var(--text-secondary);
     }
 
     /* 05 - Press */
     .home2-press {
-      background-color: #1E1418;
+      background-color: var(--color-plum);
+      color: var(--color-porcelain);
       padding-block: var(--spacing-xl);
       text-align: center;
+    }
+    body.dark-mode .home2-press {
+      background-color: #1a0e1b;
     }
     .home2-press-quote {
       font-size: clamp(1.5rem, 3vw, 2.25rem);
@@ -207,6 +195,7 @@
       line-height: 1.5;
       max-width: 640px;
       margin: 0 auto 3.5rem;
+      color: var(--color-porcelain);
     }
     .home2-press-row {
       display: flex;
@@ -221,11 +210,11 @@
       font-size: 1.3rem;
       font-weight: 400;
       letter-spacing: 0.35em;
-      color: rgba(247, 243, 238, 0.5);
+      color: rgba(247, 243, 238, 0.6);
       transition: color var(--transition-fast);
     }
     .home2-press-name:hover {
-      color: #D6B98C;
+      color: var(--color-champagne);
     }
 
     @media (max-width: 768px) {
@@ -241,7 +230,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="home2-luxe">
+<body>
 
   <!-- Navbar -->
   <nav class="navbar scrolled">
